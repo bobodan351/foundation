@@ -124,7 +124,6 @@ header {
   margin-bottom: 20px;
   position: relative;
   display: inline-block;
-  opacity: 0;
 }
 
 .contact-info-header::after {
@@ -198,8 +197,6 @@ header {
   bottom: 60px;
   margin: 20px;
 }
-@media (max-width: 400px) {
-}
 .hamburger {
   display: none;
   font-size: 28px;
@@ -222,7 +219,7 @@ header {
 
 .sidebar a {
   color: white;
-  
+
   text-decoration: none;
   font-size: 18px;
 }
@@ -237,5 +234,16 @@ header {
 
   .hamburger {
     display: block; /* show hamburger */
+  }
+}
+
+@media (max-width: 400px) {
+  .contact-section {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .contact-info-header {
+    font-size: 1.75rem;
   }
 }
