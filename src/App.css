@@ -238,7 +238,7 @@ header {
   }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 425px) {
   .contact-section {
     flex-direction: column;
     padding: 20px;
