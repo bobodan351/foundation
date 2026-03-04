@@ -201,6 +201,7 @@ header {
   display: none;
   font-size: 28px;
   cursor: pointer;
+  color: white;
 }
 .sidebar {
   position: fixed;
@@ -244,6 +245,9 @@ header {
   }
 
   .contact-info-header {
+    font-size: 1.75rem;
+  }
+  .overlay-text h1{
     font-size: 1.75rem;
   }
 }
