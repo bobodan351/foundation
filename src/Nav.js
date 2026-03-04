@@ -35,16 +35,16 @@ const Nav = () => {
 			   <div className="close-btn" onClick={() => setIsOpen(false)}>
 				✕
 			  </div>
-        <NavLink to="/" onClick={() => setIsOpen(false)}>
+        <NavLink to="/" onClick={() => setIsOpen(false)} className={'a'}>
           Home
         </NavLink>
-        <NavLink to="/about" onClick={() => setIsOpen(false)}>
+        <NavLink to="/about" onClick={() => setIsOpen(false)} className={'a'}>
           About
         </NavLink>
-        <NavLink to="/contact" onClick={() => setIsOpen(false)}>
+        <NavLink to="/contact" onClick={() => setIsOpen(false)} className={'a'}>
           Contact
 			  </NavLink>
-			  <NavLink to={"/event"} onClick={() => setIsOpen(false)}>
+			  <NavLink to={"/event"} onClick={() => setIsOpen(false)} className={'a'}>
 			Events
 		  </NavLink>
 		<NavLink to={"/donate"} onClick={() => setIsOpen(false)} className={"donate-btn"}>

@@ -209,7 +209,7 @@ header {
   right: -250px; /* hidden */
   width: 250px;
   height: 100vh;
-  background: #111;
+  background: green;
   display: flex;
   flex-direction: column;
   padding: 40px 20px;
@@ -218,17 +218,21 @@ header {
   z-index: 2000;
 }
 
-.sidebar a {
+.sidebar .a {
   color: white;
-
+  background-color: rgb(10, 218, 10);
   text-decoration: none;
   font-size: 18px;
+  padding: 10px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+
 }
 
 .sidebar.open {
   right: 0; /* slide in */
 }
-
 
 .close-btn {
   align-self: flex-end;
@@ -246,10 +250,19 @@ header {
   .hamburger {
     display: block; /* show hamburger */
   }
-    .close-btn {
+  .close-btn {
     font-size: 20px;
     display: flex;
     color: white;
+  }
+  .donate-btn {
+    background-color: #fff;
+    color: green;
+    text-decoration: none;
+    font-size: 18px;
+    text-align: center;
+    justify-content: center;
+    font-weight: bold;
   }
 }
 
@@ -264,7 +277,6 @@ header {
   }
   .overlay-text h1 {
     font-size: 2.5rem;
-    
   }
   .overlay-text::after {
     width: 210px;
