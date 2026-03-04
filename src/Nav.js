@@ -28,9 +28,13 @@ const Nav = () => {
         </nav>
         <div className="hamburger" onClick={() => setIsOpen(!isOpen)}>
           ☰
-        </div>
+			  </div>
+			 
       </header>
-      <div className={`sidebar ${isOpen ? "open" : ""}`}>
+		  <div className={`sidebar ${isOpen ? "open" : ""}`}>
+			   <div className="close-btn" onClick={() => setIsOpen(false)}>
+				✕
+			  </div>
         <NavLink to="/" onClick={() => setIsOpen(false)}>
           Home
         </NavLink>
@@ -39,7 +43,13 @@ const Nav = () => {
         </NavLink>
         <NavLink to="/contact" onClick={() => setIsOpen(false)}>
           Contact
-        </NavLink>
+			  </NavLink>
+			  <NavLink to={"/event"} onClick={() => setIsOpen(false)}>
+			Events
+		  </NavLink>
+		<NavLink to={"/donate"} onClick={() => setIsOpen(false)} className={"donate-btn"}>
+			Donate
+		  </NavLink>
       </div>
     </>
   );
