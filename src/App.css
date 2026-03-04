@@ -247,7 +247,16 @@ header {
   .contact-info-header {
     font-size: 1.75rem;
   }
-  .overlay-text h1{
+  .overlay-text h1 {
     font-size: 2.5rem;
+  }
+  .overlay-text::after {
+    width: 210px;
+    border-radius: 3px;
+    height: 8px;
+    bottom: 50px;
+  }
+  .childimg-container img {
+    height: 200px;
   }
 }
