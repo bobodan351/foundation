@@ -1,11 +1,9 @@
 import React from "react";
-import { Link, NavLink } from "react-router";
+import {  NavLink } from "react-router";
 import { FaPhone } from "react-icons/fa";
 import { FaEnvelope } from "react-icons/fa";
 import { FaMapMarkerAlt } from "react-icons/fa";
-import { FaFacebookF } from "react-icons/fa";
-import { FaInstagram } from "react-icons/fa";
-import { FaLinkedinIn } from "react-icons/fa";
+
 import "./App.css";
 
 const Footer = () => {
