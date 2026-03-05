@@ -7,7 +7,7 @@ const Nav = () => {
 	const [isOpen, setIsOpen] = useState(false);
   return (
     <>
-      <header>
+		  <header style={isOpen === true ? { opacity: 0.7,transition: "opacity 0.5s ease"}: { opacity: 1, transition: "opacity 0.5s ease"}}>
         <div>LOGO</div>
         <nav className="nav">
           <NavLink to="/" end className="nav-link">

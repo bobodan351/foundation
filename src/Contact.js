@@ -1,6 +1,7 @@
 import React from "react";
 import Nav from "./Nav";
 import ImagePreview from "./ImagePreview";
+import Footer from "./Footer";
 
 const Contact = () => {
   return (
@@ -29,7 +30,8 @@ const Contact = () => {
 					  </form>
 		  </div>
         </section>
-      </div>
+		  </div>
+		  <Footer />
     </div>
   );
 };
