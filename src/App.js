@@ -8,6 +8,9 @@ function App() {
     <div className="App">
       <Nav />
       <SlideShow />
+      <section>
+        
+      </section>
       <Footer />
     </div>
   );

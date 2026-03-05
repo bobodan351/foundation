@@ -81,6 +81,7 @@ header {
   padding: 40px;
   padding-left: 80px;
   padding-right: 80px;
+  color: rgb(209, 213, 219);
 }
 .contact-form-div {
   flex: 1;
