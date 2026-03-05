@@ -3,6 +3,9 @@ import {  NavLink } from "react-router";
 import { FaPhone } from "react-icons/fa";
 import { FaEnvelope } from "react-icons/fa";
 import { FaMapMarkerAlt } from "react-icons/fa";
+import { FaFacebookF } from "react-icons/fa";
+import { FaInstagram } from "react-icons/fa";
+import { FaLinkedinIn } from "react-icons/fa";
 
 import "./App.css";
 
@@ -41,15 +44,15 @@ const Footer = () => {
           <h3 className="footer-title">Latest News</h3>
           <ul className="footer-news">
             <li>
-              <a href="/news/1">A new cause to help</a>
+              <NavLink to="#">A new cause to help</NavLink>
               <span className="news-date">July 27, 2025</span>
             </li>
             <li>
-              <a href="/news/2">We love to help people</a>
+              <NavLink to="#">We love to help people</NavLink>
               <span className="news-date">July 20, 2025</span>
             </li>
             <li>
-              <a href="/news/3">The new ideas for helping</a>
+              <NavLink to="#">The new ideas for helping</NavLink>
               <span className="news-date">July 15, 2025</span>
             </li>
           </ul>
@@ -79,7 +82,18 @@ const Footer = () => {
             </div>
           </div>
         </div>
-      </div>
+		  </div>
+		  <div className="footer-bottom">
+          <div className="social-icons">
+            <NavLink to="#"><FaFacebookF /></NavLink>
+            <NavLink to="#"><FaInstagram /></NavLink>
+            <NavLink to="#"><FaLinkedinIn /></NavLink>
+          </div>
+
+          <p className="copyright">
+            Copyright © 2025 All rights reserved | The Frances Ushedo Foundation ♥
+          </p>
+        </div>
     </footer>
   );
 };
