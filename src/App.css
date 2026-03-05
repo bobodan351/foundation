@@ -127,6 +127,7 @@ header {
   margin-bottom: 20px;
   position: relative;
   display: inline-block;
+  color: rgba(0, 0, 0, 0.815);
 }
 
 .contact-info-header::after {
