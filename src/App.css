@@ -493,6 +493,49 @@ header {
   transition: all 0.5s ease;
   background-color: rgb(10, 218, 10);
 }
+.impact-section {
+  display: flex;
+  gap: 40px;
+  padding: 40px;
+  padding-left: 80px;
+  padding-right: 80px;
+  flex-wrap: wrap;
+}
+.impact-title {
+  font-size: 1.25rem;
+  font-weight: 900;
+  font-family: roberto, sans-serif;
+  color: white;
+  width: auto;
+  padding-left: 50px;
+  max-width: 500px;
+  line-height: 35px;
+  display: flex;
+}
+.impact-item {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  color: white;
+  flex: 1;
+}
+.impact-item p {
+  font-size: 2rem;
+  font-weight: 900;
+  color: white;
+
+}
+.impact-number{
+  
+}
+.impact-item p:last-child {
+  font-size: 1rem;
+  font-weight: normal;
+  color: white;
+}
+.impact-container {
+  background-color: rgb(10, 218, 10);
+}
 
 /* Responsive Design */
 @media (max-width: 1024px) {
