@@ -501,7 +501,6 @@ header {
   padding-top: 0;
   padding-left: 80px;
   padding-right: 80px;
-  flex-wrap: wrap;
 }
 .impact-title {
   font-size: 1.25rem;
@@ -509,10 +508,13 @@ header {
   font-family: roberto, sans-serif;
   color: rgb(0, 120, 0);
   width: auto;
-  padding-left: 50px;
-  max-width: 500px;
+  padding: 30px;
+  padding-left: 130px;
+
   line-height: 35px;
   display: flex;
+  align-items: center;
+  position: relative;
 }
 .impact-item {
   display: flex;
@@ -540,18 +542,68 @@ header {
 .impact-container {
   background-color: #f7f7f7;
 }
+.mission-container {
+  background-color: #f7f7f7;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
 
+  align-items: center;
+  padding: 40px;
+  gap: 20px;
+}
+.mission-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  background-color: rgb(209, 213, 219);
+  color: #4b5563;
+  transition: all 0.3s ease;
+  height: 300px;
+  padding: 20px;
+}
+.mission-item:hover {
+  background-color: rgb(10, 218, 10);
+  color: white;
+  transform: scale(1.05);
+}
+.mission-item p {
+  text-align: center;
+}
+.mission-item img {
+  width: 100px;
+  height: auto;
+}
+.donate img {
+  height: 80px;
+}
 /* Responsive Design */
 @media (max-width: 1024px) {
+  .mission-container {
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+  }
   .footer-container {
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
     justify-content: center;
     padding: 20px;
   }
+  .impact-section {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 @media (max-width: 768px) {
+  .mission-container {
+    grid-template-columns: 1fr;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+  }
   .nav {
     display: none; /* hide normal nav */
   }
@@ -595,6 +647,16 @@ header {
   }
   .slides-text {
     font-size: 1rem;
+  }
+}
+@media (max-width: 600px) {
+  .impact-section {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .impact-item {
+    border-left: none;
+    border-top: #4b5563 2px solid;
+    padding: 20px 10px;
   }
 }
 @media (max-width: 500px) {
