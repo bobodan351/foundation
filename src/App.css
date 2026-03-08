@@ -819,4 +819,7 @@ header {
   .childimg-container img {
     height: 200px;
   }
+  .home-about-img img {
+    width: 320px;
+  }
 }
