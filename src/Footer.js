@@ -91,7 +91,7 @@ const Footer = () => {
           </div>
 
           <p className="copyright">
-            Copyright © 2026 All rights reserved | The Frances Ushedo Foundation ♥
+            Copyright © 2026 All rights reserved | The Apeke Dynasty Foundation ♥
           </p>
         </div>
     </footer>

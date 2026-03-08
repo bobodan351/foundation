@@ -6,6 +6,7 @@ import Counter from "./Counter";
 import checkingImg from "./images/checking.png";
 import handIcon from "./images/handIcon.png";
 import icountry from "./images/icontry.png";
+import tryout from "./images/tryout3 (1).png"
 
 function App() {
   return (
@@ -13,9 +14,10 @@ function App() {
       <Nav />
       <SlideShow />
       <div className="impact-container">
-        <h1 className="impact-title">
-          STRENGTHENING OUR COMMUNITY FROM GROUND UP
-        </h1>
+      <div className="impact-header">
+  <p className="impact-tag">OUR IMPACT</p>
+  <h2>Strengthening Our Community From The Ground Up</h2>
+</div>
         <section className="impact-section">
           <div className="impact-item">
             <p className="impact-number">
@@ -30,15 +32,33 @@ function App() {
             <p>Grants distributed to local organizations</p>
           </div>
           <div className="impact-item">
-            <p className="impact-number">41%</p>
+            <p className="impact-number"><Counter end={ 45}/>%</p>
             <p>Funding focused on children and young people</p>
           </div>
           <div className="impact-item">
-            <p className="impact-number">78%</p>
+            <p className="impact-number"><Counter end={78}/>%</p>
             <p>Of guarantees have an annual income of under #500,000 </p>
           </div>
         </section>
       </div>
+      <section className="home-about-section">
+        <div className="home-about-container">
+          <h1 className="title">Welcome To The Apeke Dynasty Foundation</h1>
+          <div className="span-after"></div>
+          <p>
+           The Apeke Dynasty Foundation (ADF) is a dedicated charitable organization founded in 
+Nigeria by a group of selfless and visionary women. These female leaders are commiƩed 
+to enhancing the general well-being of women and children within their communities. 
+ADF operates inclusively, offering support to women and children regardless of their 
+tribe, socioeconomic status, or religion. Our foundation also prioritizes educating young 
+girls about the dangers and realities of trafficking. Officially registered and licensed by the 
+Nigerian Government's Corporate Affairs Commission (CAC), ADF aims to provide both 
+physical and mental relief, thereby significantly improving the lives of our target Audience.
+          </p>
+          <button className="read-more">Read More</button>
+        </div>
+        <div className="home-about-img"><img src={tryout} alt="" /></div>
+      </section>
       <section className="mission-container">
         <div className="mission-item">
           <img src={handIcon} alt="" />

@@ -12,7 +12,7 @@ const Contact = () => {
         <section className="contact-section">
           <div className="contact-info"	>
 					  <h1 className="contact-info-header">Get In Touch</h1>
-					  <span className="span-after"></span>
+					  
             <p>
               We would love to hear from you! Please fill out the form and we
               will get back to you as soon as possible.
